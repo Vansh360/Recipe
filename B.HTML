@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Finder - Multilingual</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Recipe Finder 🍽️</h1>
+      <p class="creator-name">Created by Vansh Rajesh Badgayya</p>
+    </div>
+
+    <div>
+      <select id="languageSelect">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <!-- Add more languages -->
+      </select>
+      <button id="loginBtn">Login</button>
+    </div>
+
+    <button id="toggleDarkMode">🌙 Dark Mode</button>
+
+  </header>
+
+  <main>
+    <input type="text" id="searchInput" placeholder="Search for a recipe..." />
+    <button onclick="searchRecipe()">Search</button>
+    <section id="results"></section>
+  </main>
+
+  <!-- Login Popup -->
+  <div class="login-popup" id="loginPopup">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Submit</button>
+    <button onclick="document.getElementById('loginPopup').style.display='none'">Close</button>
+    <p id="loginMessage"></p>
+  </div>
+
+  <footer>
+    <p>© 2025 Created by Vansh Rajesh Badgayya</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
